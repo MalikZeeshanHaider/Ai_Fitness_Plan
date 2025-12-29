@@ -47,7 +47,7 @@ from src.domain.models.state import ExperienceLevel
 
 # Page configuration
 st.set_page_config(
-    page_title="AI Fitness Planner",
+    page_title="AI Gym Workout Recommendation System",
     page_icon="🏋️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -233,7 +233,7 @@ def main():
                             max-width: 700px;
                             border: 1px solid rgba(226, 232, 240, 0.8);">
                     <h1 style="font-size: 3em; margin-bottom: 15px; color: #1E3A8A;">🏋️</h1>
-                    <h2 style="color: #1E3A8A; margin-bottom: 15px; font-weight: 600;">Welcome to AI Fitness Planner</h2>
+                    <h2 style="color: #1E3A8A; margin-bottom: 15px; font-weight: 600;">Welcome to AI Gym Workout Recommendation System</h2>
                     <p style="font-size: 1.15em; color: #64748B; margin-bottom: 35px; line-height: 1.6;">
                         Create personalized workout plans tailored to your fitness goals, <br/>
                         experience level, and available time.

@@ -27,7 +27,7 @@ def render_header() -> None:
     """Render the application header."""
     st.markdown("""
     <div class="header-container">
-        <div class="header-title">🏋️ AI Fitness Planner</div>
+        <div class="header-title">🏋️ AI Gym Workout Recommendation System</div>
         <div class="header-subtitle">
             Intelligent Workout Recommendations
         </div>
@@ -39,7 +39,7 @@ def render_footer() -> None:
     """Render the application footer."""
     st.markdown("""
     <div class="footer">
-        <p><strong>AI Fitness Planner</strong> • Professional Workout Planning System</p>
+        <p><strong>AI Gym Workout Recommendation System</strong> • Professional Workout Planning System</p>
         <p style="font-size: 0.9rem; color: #64748B; margin-top: 0.5rem;">
             Powered by Advanced AI Technology • © 2025
         </p>
