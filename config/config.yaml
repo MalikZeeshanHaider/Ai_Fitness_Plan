@@ -1,0 +1,211 @@
+# ============================================================================
+# AI Gym Workout Recommendation System - Configuration
+# ============================================================================
+# This file contains all configuration parameters for the system.
+# Follow enterprise best practices: no hardcoded values in source code.
+# ============================================================================
+
+# Application Settings
+application:
+  name: "AI Gym Workout Recommendation System"
+  version: "1.0.0"
+  environment: "production"  # Options: development, staging, production
+  debug_mode: false
+
+# Data Settings
+data:
+  dataset_path: "data/GymDataset.csv"
+  cache_enabled: true
+  cache_directory: "data/cache"
+  
+# Logging Settings
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  log_directory: "logs"
+  log_file: "gym_ai_system.log"
+  max_file_size_mb: 10
+  backup_count: 5
+  console_output: true
+
+# Intelligent Agents Settings
+agents:
+  # Simple Reflex Agent - Rule-based safety constraints
+  simple_reflex:
+    enabled: true
+    max_daily_exercises: 10
+    min_rest_days_per_week: 2
+    
+  # Model-Based Agent - State tracking
+  model_based:
+    enabled: true
+    state_persistence: true
+    
+  # Goal-Based Agent - Fitness goals
+  goal_based:
+    enabled: true
+    available_goals:
+      - "weight_loss"
+      - "muscle_gain"
+      - "flexibility"
+      - "endurance"
+      - "general_fitness"
+    
+  # Utility-Based Agent - Scoring
+  utility_based:
+    enabled: true
+    weights:
+      calorie_burn: 0.3
+      muscle_engagement: 0.25
+      difficulty_match: 0.2
+      equipment_availability: 0.15
+      time_efficiency: 0.1
+    
+  # Learning Agent - Dataset learning
+  learning:
+    enabled: true
+    learning_rate: 0.01
+    pattern_threshold: 0.7
+
+# Search Algorithm Settings
+search:
+  # General search settings
+  max_depth: 100
+  max_nodes: 10000
+  timeout_seconds: 30
+  
+  # Algorithm-specific settings
+  algorithms:
+    bfs:
+      enabled: true
+    dfs:
+      enabled: true
+      depth_limit: 50
+    ucs:
+      enabled: true
+    greedy:
+      enabled: true
+    a_star:
+      enabled: true
+      
+  # Heuristic Settings for Informed Search
+  heuristics:
+    calorie_weight: 0.4
+    muscle_coverage_weight: 0.3
+    difficulty_weight: 0.2
+    time_weight: 0.1
+
+# Reasoning Settings
+reasoning:
+  # Deductive Reasoning - Rule Engine
+  deductive:
+    enabled: true
+    rule_file: "config/rules.yaml"
+    
+  # Inductive Reasoning - Pattern Learning
+  inductive:
+    enabled: true
+    min_pattern_support: 3
+    confidence_threshold: 0.75
+    
+  # Probability Settings
+  probability:
+    enabled: true
+    prior_weight: 0.3
+    likelihood_weight: 0.7
+    min_probability_threshold: 0.5
+
+# Workout Plan Generation Settings
+workout_plan:
+  # Duration constraints
+  min_duration_minutes: 20
+  max_duration_minutes: 120
+  default_duration_minutes: 45
+  
+  # Exercise selection
+  min_exercises: 3
+  max_exercises: 12
+  default_exercises: 6
+  
+  # Diversity settings
+  muscle_group_diversity: true
+  equipment_diversity: true
+  difficulty_progression: true
+  
+  # Safety constraints
+  warm_up_required: true
+  cool_down_required: true
+  rest_between_sets_seconds: 60
+
+# User Profile Settings
+user_profile:
+  # Experience levels
+  experience_levels:
+    - "beginner"
+    - "intermediate"
+    - "advanced"
+    - "expert"
+  
+  # Fitness goals mapping
+  goal_parameters:
+    weight_loss:
+      calorie_priority: 0.8
+      cardio_focus: 0.7
+      strength_focus: 0.3
+    muscle_gain:
+      calorie_priority: 0.4
+      cardio_focus: 0.2
+      strength_focus: 0.8
+    flexibility:
+      calorie_priority: 0.3
+      cardio_focus: 0.2
+      strength_focus: 0.2
+    endurance:
+      calorie_priority: 0.6
+      cardio_focus: 0.8
+      strength_focus: 0.3
+
+# PDF Export Settings
+pdf_export:
+  enabled: true
+  template: "default"
+  include_reasoning: true
+  include_alternatives: true
+  page_size: "A4"
+  font_family: "Helvetica"
+  font_size: 11
+
+# UI Settings
+ui:
+  theme: "light"  # Options: light, dark
+  primary_color: "#FF6B6B"
+  secondary_color: "#4ECDC4"
+  background_color: "#FFFFFF"
+  text_color: "#2C3E50"
+  
+  # Form settings
+  show_advanced_options: true
+  enable_tooltips: true
+  
+  # Display settings
+  results_per_page: 10
+  show_algorithm_details: true
+  show_reasoning_explanation: true
+
+# Performance Settings
+performance:
+  cache_search_results: true
+  parallel_agent_execution: false
+  max_workers: 4
+  timeout_per_operation: 10
+
+# Validation Settings
+validation:
+  strict_mode: true
+  validate_on_input: true
+  validate_on_output: true
+  
+# Security Settings (for future enhancements)
+security:
+  enable_rate_limiting: false
+  max_requests_per_minute: 60
