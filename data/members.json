@@ -1,0 +1,32 @@
+[
+  {
+    "first_name": "zeeshan",
+    "last_name": "haider",
+    "email": "zeeshan@gmail.com",
+    "phone": "34234353455",
+    "password": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "plan": "Basic - $9.99/month",
+    "card_name": "zeeshan",
+    "card_expiry": "3355",
+    "newsletter": true,
+    "id": 1,
+    "registered_at": "2026-01-02 17:53:58",
+    "status": "active",
+    "card_last_four": "4323"
+  },
+  {
+    "first_name": "habib",
+    "last_name": "ali",
+    "email": "habib@gamil.com",
+    "phone": "56473829047",
+    "password": "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225",
+    "plan": "Pro - $19.99/month",
+    "card_name": "habib",
+    "card_expiry": "434",
+    "newsletter": true,
+    "id": 2,
+    "registered_at": "2026-01-02 18:11:02",
+    "status": "active",
+    "card_last_four": "65t4"
+  }
+]
